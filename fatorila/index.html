@@ -8,8 +8,9 @@
         *{
             margin: 0;
             padding: 0;
-            font-family: 'Courier New', Courier, monospace;
+            font-family:cursive;
             color: white;
+            font-size: 50px;
             
         }
         body{
@@ -18,7 +19,7 @@
         }
         .container{
             background-color: rgb(27, 6, 87);
-            width: 300px;
+            width: 600px;
             text-align: center;
             border-radius: 10px;
             box-shadow: 3px 4px 23px rgba(38, 5, 75, 0.904);
@@ -29,18 +30,19 @@
             padding: 15px;
         }
         input{
-            border-radius: 5px;
+            border-radius: 15px;
             padding: 2px;
-            margin-top: 10px;
+            margin-top: 4px;
+            width: 500px;
             border: 0;
             background-color: rgb(10, 35, 88);
         }
-        button{
+        #btn{
             margin-bottom: 5px;
             background-color: blueviolet;
             border: 0;
             border-radius: 10px;
-            padding: 3px;
+            padding: 5px;
         }
     </style>
 </head>
@@ -49,10 +51,11 @@
         <h2>Fatorial</h2>
         <form action="">
             <p> Digite um Número</p>
-            <input type="number" name="n1" id="n1"></form><br>
-            <button onclick="calcular()">calcular</button>
-            <div class="res">Resposta..</div>
+            <input type="number" name="n1" id="n1" placeholder="ex:5"></form><br>
         </form>
+        <input type="button" value="Calcular" id="btn" onclick="calcular()">
+        <input type="button" value="Limpar" id="btn" onclick="Limpar()" >
+        <div class="res">Resposta..</div>
     </div>
     <script src="fat.js"></script>
 </body>
